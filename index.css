@@ -86,6 +86,7 @@ a:active {
 
 /* ----- LAYOUT ----- */
 
+
 header, 
 section, 
 footer {
@@ -114,17 +115,26 @@ header,
     margin: 0 auto 2em;
 }
 
-.section-two-image-container {
-    display: flex;
-    justify-content: space-between;
-}
-
 .feature-image {
-    width: 48.8%;
+    width: 100%;
     border-radius: 4.6px;
+    margin-bottom: 1em;
 }
 
 footer {
     text-align: center;
     color: #5f29a3;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+@media (min-width: 480px) {
+    .section-two-image-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .feature-image {
+        width: 48.8%;        
+    }
 }
